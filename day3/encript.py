@@ -1,0 +1,5 @@
+text=input("Enter:")
+text=text.replace('an','')
+text=text.replace('a','')
+text=text.replace('the','')
+print(text)

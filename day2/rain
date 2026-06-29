@@ -1,0 +1,9 @@
+Rain=int(input("Enter the size:"))
+if  Rain<2:
+    print("No Rain")
+elif Rain>2 & Rain<5:
+    print("Light Rain")
+elif Rain>5 & Rain<10:
+    print("Moderate Rain")
+else:
+    print("Heavy Rain")

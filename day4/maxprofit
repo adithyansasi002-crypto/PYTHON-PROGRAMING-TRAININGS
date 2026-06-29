@@ -1,0 +1,8 @@
+n=list(map(int,input().split()))
+current_sum=0
+max_profit=0
+for i in range(1,len(n)):
+    diff=n[i]-n[i-1]
+    current_sum=max(0,current_sum+diff)
+    max_profit=max(max_profit,current_sum)
+print(max_profit)

@@ -1,0 +1,5 @@
+passw=input("password")
+passw=passw.replace('A','a')
+passw=passw.replace('@','#')
+passw=passw.replace('1','2')
+print(passw)

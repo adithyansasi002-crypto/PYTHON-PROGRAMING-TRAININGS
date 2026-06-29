@@ -1,0 +1,26 @@
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    # Getter
+    def get_balance(self):
+        return self.__balance
+
+    # Setter
+    def set_balance(self, balance):
+        if balance >= 0:
+            self.__balance = balance
+        else:
+            print("Invalid balance")
+
+# Create object
+acc = BankAccount(5000)
+
+# Check balance
+print("Current Balance:", acc.get_balance())
+
+# Set new balance
+acc.set_balance(8000)
+
+# Check updated balance
+print("Updated Balance:", acc.get_balance())

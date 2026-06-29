@@ -1,0 +1,2 @@
+sq= list(map(lambda x:int(x)*int(x),input()))
+print(sq)

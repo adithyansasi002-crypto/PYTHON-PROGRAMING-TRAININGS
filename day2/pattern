@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if a>b & a>c & a>d:
+    print("a is the largest")
+elif  b>c & b>d:
+    print("b is the largest")
+elif  c>d:
+    print("c is the largest")
+else:
+    print("d is the largest")

@@ -1,0 +1,9 @@
+def thirdmax(numa):
+    unique=set(nums)
+    unique=sorted(unique,reverse=true)
+
+    if len(unique)>=3:
+        return unique[2]
+    
+    return unique[0]
+nums=list(map(int,input("enter the ")))

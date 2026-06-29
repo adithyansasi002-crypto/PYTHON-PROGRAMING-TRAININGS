@@ -1,0 +1,13 @@
+class Conversion:
+    def int_to_roman(self,num):
+        rom=['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I']
+        inte=[1000,900,500,400,100,90,50,40,10,9,5,4,1]
+        romanEq=''
+        for i in range(len(inte)):
+            while num>=inte[i]:
+                romanEq+=rom[i]
+                num-=inte[i]
+        return romanEq
+num=int(input())
+obj=Conversion()
+print(obj.int_to_roman(num))

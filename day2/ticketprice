@@ -1,0 +1,16 @@
+n=int(input("enter the number of people:"))
+x=int(input("are you student"))
+if n<15 & x==0:
+    bill= 200*n
+    print(bill)
+elif n<15 & x==1:
+    bill=(200-(200*5/100))*n
+    print(bill)
+elif n>15 & x==0:
+    bill=(200-(200*20/100))*n
+    print(bill)
+elif n>15 & x==1:
+    bill=(200-(200*25/100))*n
+    print(bill)
+else:
+    print("error")

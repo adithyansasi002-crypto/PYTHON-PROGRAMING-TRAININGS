@@ -1,0 +1,13 @@
+#Sorting of dictionary
+n=eval(input())
+choice=input('key/price')
+def get_value(item):
+    return item[1]
+if choice=='key':
+    sorted_dict=dict(sorted(n.items()))
+    print("Sorted dictionary",sorted_dict)
+elif choice=='price':
+    sorted_dict=dict(sorted(n.items(),key=get_value))
+    print("Sorted dictionary",sorted_dict)
+else:
+    print('Invalid choice')

@@ -1,0 +1,22 @@
+# Parent Class
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def show_balance(self):
+        print("Balance:", self.balance)
+
+
+# Child Class
+class SavingsAccount(BankAccount):
+    def add_interest(self):
+        self.balance += self.balance * 0.05
+        print("Interest Added")
+
+
+# Create object of child class
+acc = SavingsAccount(10000)
+
+acc.show_balance()
+acc.add_interest()
+acc.show_balance()

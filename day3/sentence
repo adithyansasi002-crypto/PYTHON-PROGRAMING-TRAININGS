@@ -1,0 +1,4 @@
+sentence="renu loves to write"
+words=sentence.split()
+print(words)
+print(len(words))

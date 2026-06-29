@@ -1,0 +1,6 @@
+tup=eval(input())
+k=int(input())
+prod=1
+for t in tup:
+    prod=prod*t[k]
+print(f"Product of vales:{k}:{prod}")

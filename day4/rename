@@ -1,0 +1,8 @@
+n=input().split()
+all_id=set(n)
+duplicates=set()
+for i in n:
+    if n.count(i)>1:
+        duplicates.add(i)
+lost_id=all_id-duplicates
+print("lost product ids:",lost_id)

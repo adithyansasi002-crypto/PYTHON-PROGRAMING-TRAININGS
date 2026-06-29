@@ -1,0 +1,10 @@
+n=[
+    ("a",3),
+    ("b",2),
+    ("c",1)
+]
+sorted_students=sorted(
+    n,
+    key=lambda x:x[1]
+)
+print(sorted_students)

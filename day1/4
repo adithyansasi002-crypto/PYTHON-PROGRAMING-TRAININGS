@@ -1,0 +1,11 @@
+n=int(input("enter the number:"))
+a=n*n
+x=len(str(n))
+print(x)
+b=a%(10**x)
+c=a//(10**x)
+d=b+c
+if d==n:
+    print("True")
+else:
+    print("false")

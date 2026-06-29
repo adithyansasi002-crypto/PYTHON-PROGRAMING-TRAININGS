@@ -1,0 +1,10 @@
+unit=int(input("enter the number:"))
+if unit<=100 & unit>0:
+    r1=unit*1.5
+    print(r1)
+elif unit>100 & unit<200:
+     r2=(100*1.5+(unit-100)*2.5)
+     print(r2)
+elif unit>200:
+     r3=(100*1.5+100*2.5+(unit-200)*4)
+     print(r3)

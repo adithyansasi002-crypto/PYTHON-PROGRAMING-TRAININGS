@@ -1,0 +1,8 @@
+n=input()
+s=len(n)//2
+firstpart=n[:s]
+secondpart=n[s:]
+revfirst=firstpart[::-1]
+revsecond=secondpart[::-1]
+result=revfirst+revsecond
+print(result)
